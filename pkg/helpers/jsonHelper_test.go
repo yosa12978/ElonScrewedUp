@@ -19,9 +19,10 @@ func TestDump(t *testing.T) {
 	act, _ := json.Marshal(payload)
 	if res != string(act) {
 		t.Fail()
+		t.Fatal("Hello World")
 	}
 }
 
-func TestLaod(t *testing.T) {
+func TestLoad(t *testing.T) {
 
 }
