@@ -1,10 +1,10 @@
 package models
 
-import "github.com/google/uuid"
+import "time"
 
 type Tweet struct {
-	Id   uuid.UUID
-	Url  string
-	Date int64
-	Text string
+	UUID    string
+	Url     string
+	Pubdate time.Time
+	Text    string
 }

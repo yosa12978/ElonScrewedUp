@@ -11,5 +11,7 @@ build:
 
 deps:
 	go mod tidy
-	go get -u github.com/mattn/go-sqlite3
+	go get -u gorm.io/gorm
+	go get -u gorm.io/driver/sqlite
 	go get -u github.com/google/uuid
+	go get -u github.com/gorilla/mux
