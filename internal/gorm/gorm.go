@@ -1,6 +1,7 @@
 package db
 
 import (
+	gmodels "github.com/yosa12978/ElonScrewedUp/internal/gorm/models"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )
@@ -12,7 +13,7 @@ func Connect(conn string) {
 	if err != nil {
 		panic(err)
 	}
-	// db.AutoMigrate(&TweetGorm{})
+	db.AutoMigrate(&gmodels.TweetGorm{})
 	db = database
 }
 
